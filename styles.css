@@ -1,0 +1,122 @@
+
+    body{
+        background:rgb(87, 175, 139);
+        color: white;
+        font-family:arial;
+    }
+    nav ul{
+        background-color:rgb(255, 255, 255);
+        margin:0px;
+        padding:20px;
+        border-radius: 0.15cm;
+        list-style-type:none;
+    }
+    nav li{
+        display: inline-block;
+        text-transform:uppercase;
+        text-align:left;
+        margin-right:20px; 
+        font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+        font-weight: bold;
+    }
+    header{
+        background-color:rgb(87, 175, 139);
+        /*background-image: url("images/sunset.jpg");
+        background-repeat: no-repeat;
+        background-position:center;
+        background-size: 100%;
+        height: 500px;
+         height:100%;
+        width:100%;
+        */
+        width: 100%;
+        height: 580px;
+        padding: 0px;
+        text-align: center;
+    }
+    #myVideo {
+        /*position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;*/
+        /*background-size: 100%;
+        height: 500px;
+        padding: 20px;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;*/
+        margin: 0;
+        max-width: 100%;
+        max-height: 500px;
+        padding: 0;
+
+    }
+    .features{
+        background: white;
+        color:rgb(87, 175, 139);
+        padding:20px;
+        margin: 0px;
+        display:flex;
+        flex-direction:row;
+        border-radius: 0.15cm;
+    }
+    .features figure{
+        margin:auto;
+        text-align:center;
+        text-transform:uppercase;
+        font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+        font-weight: bold;
+        width:150px;
+    }
+    .features figure img{
+        
+       border: 10px solid rgb(87, 175, 139);
+       border-radius:50%;
+       /*box-shadow: grey 0px 0px 10px;*/
+       width:150px
+    }
+    footer{
+        background:white;
+        color:white;
+       /* padding: 20px 20px;*/
+        padding: 20px;
+        font-size:12px;
+        text-align:center;
+        border-radius: 0.15cm;
+
+    }
+    div{
+        background:pink;
+        color:white;
+        margin:auto;
+        width:100px;
+    }
+    ul{
+        margin:0px;
+        padding:0px;
+        list-style-type:none;
+    }
+    li{
+        display:inline-block;
+        margin-right: 10px; 
+    }
+
+
+
+   /* header .logo a {
+        background-image: url("/Images/first.jpg");
+        background-size: 300px;
+        background-repeat: no-repeat;
+        display: inline-block;
+        height: 180px;
+        position: relative;
+        text-indent: -999999px;
+        top: -10px;
+        width: 300px;
+    }*/
+    
+
+  
