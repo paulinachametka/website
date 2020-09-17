@@ -18,8 +18,10 @@
         color:white;
 
     }
+
     a:active {
         color: white;
+        background: white;
     }
 
     a:visited {
