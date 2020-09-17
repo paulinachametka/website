@@ -26,8 +26,16 @@
 
     a:visited {
         color: white;
-        background: white;
+        
     }
+
+    a:hover {
+        color: white;
+      }
+
+    a:link {
+        color: white;
+      }
     
     body{
         background:white;
