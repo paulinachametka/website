@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>paulina chametka — resume</title>
+  <meta name="description" content="Resume of Paulina Chametka, software engineer." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&family=Quicksand:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/resume.css?v=4" />
+</head>
+
+<body>
+  <div class="grain" aria-hidden="true"></div>
+
+  <div class="page">
+    <div class="topbar">
+      <a class="home" href="index.html" aria-label="Back home">
+        <svg viewBox="0 0 40 34" width="34" height="30" aria-hidden="true">
+          <g fill="none" stroke="#33302c" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6,18 L20,6 L34,18" />
+            <path fill="#f7e8d2" d="M9,16 v13 h22 v-13" />
+            <path fill="#9cba8c" d="M17,29 v-7 q0,-3 3,-3 q3,0 3,3 v7 z" />
+          </g>
+        </svg>
+        <span>home</span>
+      </a>
+      <a class="download" href="assets/Paulina_Chametka_Resume.pdf" target="_blank" rel="noopener">
+        download pdf <span aria-hidden="true">↓</span>
+      </a>
+    </div>
+
+    <!-- crawling worm -->
+    <div class="worm-lane" aria-hidden="true">
+      <svg class="worm" viewBox="0 0 68 30" xmlns="http://www.w3.org/2000/svg">
+        <g class="worm__ink" filter="url(#doodle)" fill="#a8c191" stroke="#33302c" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <circle class="seg s1" cx="10" cy="20" r="6" />
+          <circle class="seg s2" cx="19" cy="20" r="6.4" />
+          <circle class="seg s3" cx="28" cy="20" r="6.4" />
+          <circle class="seg s4" cx="37" cy="20" r="6.4" />
+          <circle class="seg s5" cx="46" cy="20" r="6.6" />
+          <!-- head -->
+          <g class="seg head">
+            <circle cx="56" cy="19" r="7.5" />
+            <g class="antennae" stroke-width="1.8" fill="none">
+              <path d="M54,12 q-1,-5 -4,-7" />
+              <path d="M59,12 q1,-5 4,-7" />
+            </g>
+            <circle cx="58.5" cy="17.5" r="1.4" fill="#33302c" stroke="none" />
+          </g>
+        </g>
+        <defs>
+          <filter id="doodle" x="-20%" y="-20%" width="140%" height="140%">
+            <feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="2" seed="3" result="n" />
+            <feDisplacementMap in="SourceGraphic" in2="n" scale="2.2" />
+          </filter>
+        </defs>
+      </svg>
+    </div>
+
+    <header class="head reveal">
+      <h1 class="head__name">paulina chametka</h1>
+      <p class="head__role">software engineer</p>
+      <p class="head__contact">
+        <a href="mailto:paulinachametka@gmail.com">paulinachametka@gmail.com</a>
+        <span class="sep">/</span>
+        <a href="https://www.linkedin.com/in/paulina-chametka/" target="_blank" rel="noopener">linkedin</a>
+        <span class="sep">/</span>
+        <a href="https://github.com/paulinachametka" target="_blank" rel="noopener">github</a>
+        <span class="sep">/</span>
+        <span>Toronto, ON</span>
+      </p>
+    </header>
+
+    <!-- experience -->
+    <section class="section">
+      <h2 class="section__title reveal"><span class="section__num">01</span> experience</h2>
+      <div class="entries">
+        <article class="entry reveal">
+          <div class="entry__meta">
+            <span class="entry__date">Jun 2022 — Present</span>
+            <span class="entry__org">Deloitte<br />Toronto, ON</span>
+          </div>
+          <div class="entry__main">
+            <h3 class="entry__role">Senior Consultant</h3>
+            <ul class="entry__points">
+              <li>Built backend services for a generative-AI human capital tool — security testing, evaluation
+                workflows, and production readiness.</li>
+              <li>Led enhancements to an RFP management web app, including a PostgreSQL migration and front-end work in
+                React and Flask.</li>
+              <li>Developed a generative-AI app querying 4M+ structured entries via SQL, using Gemini and RAG to improve
+                data accessibility.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="entry reveal">
+          <div class="entry__meta">
+            <span class="entry__date">Apr 2020 — Aug 2020</span>
+            <span class="entry__org">Nokia<br />Ottawa, ON</span>
+          </div>
+          <div class="entry__main">
+            <h3 class="entry__role">Automation Engineer</h3>
+            <ul class="entry__points">
+              <li>Enhanced an AI-driven Rasa chatbot in Python to automate networking-query responses, reducing team
+                workload via self-serve answers.</li>
+              <li>Built a patch-tracking tool (HTML, CSS, Flask, SQLAlchemy) that surfaces upcoming patches and notifies
+                users when they're available.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="entry reveal">
+          <div class="entry__meta">
+            <span class="entry__date">May 2019 — Dec 2019</span>
+            <span class="entry__org">Canada Revenue Agency<br />Ottawa, ON</span>
+          </div>
+          <div class="entry__main">
+            <h3 class="entry__role">Systems Analyst</h3>
+            <ul class="entry__points">
+              <li>Worked with stakeholders to develop requirements, documentation, test plans, and specifications
+                aligned with goals and timelines.</li>
+              <li>Led analysts and developers through a successful Agile sprint as Scrum Master, tracking work in
+                Jira.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="entry reveal">
+          <div class="entry__meta">
+            <span class="entry__date">Jan 2019 — Apr 2019</span>
+            <span class="entry__org">Carleton University<br />Ottawa, ON</span>
+          </div>
+          <div class="entry__main">
+            <h3 class="entry__role">Research Assistant</h3>
+            <ul class="entry__points">
+              <li>Ran user studies on social media's influence on hiring, accessibility for people with visual
+                impairments, and digital identity adoption.</li>
+              <li>Collected data from 50+ participants, performed thematic analysis, and contributed to privacy and
+                social-equity research.</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- publications -->
+    <section class="section">
+      <h2 class="section__title reveal"><span class="section__num">02</span> publications</h2>
+      <div class="entries">
+        <article class="entry reveal">
+          <div class="entry__meta">
+            <span class="entry__date">Aug 2023</span>
+            <span class="entry__org">IEEE<br />Copenhagen, DK</span>
+          </div>
+          <div class="entry__main">
+            <h3 class="entry__role">Security &amp; Privacy Perceptions of Mental Health Chatbots</h3>
+            <ul class="entry__points">
+              <li>Led a 180-participant study on willingness to disclose to and trust mental health chatbots (adopters
+                vs. non-adopters).</li>
+              <li>Published in IEEE and presented at the 20th Annual International Conference on Privacy, Security, and
+                Trust.</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- education -->
+    <section class="section">
+      <h2 class="section__title reveal"><span class="section__num">03</span> education</h2>
+      <div class="entries">
+        <article class="entry reveal">
+          <div class="entry__meta">
+            <span class="entry__date">2017 — 2022</span>
+            <span class="entry__org">Carleton University<br />Ottawa, ON</span>
+          </div>
+          <div class="entry__main">
+            <h3 class="entry__role">B.Sc. Computer Science, Management &amp; Business</h3>
+            <ul class="entry__points">
+              <li>GPA: 3.85 / 4.0</li>
+              <li>Scholarships: Entrance ($16,000), Stanley Black &amp; Decker Academic ($3,000), and the Tracey &amp;
+                Siva Ananmalay Scholarship in Computer Science ($1,020).</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- skills -->
+    <section class="section">
+      <h2 class="section__title reveal"><span class="section__num">04</span> skills</h2>
+      <div class="skills">
+        <div class="entry reveal">
+          <div class="entry__meta"><span class="entry__org">languages</span></div>
+          <div class="entry__main tags">
+            <span class="tag">Python</span><span class="tag">Java</span><span class="tag">JavaScript</span>
+            <span class="tag">C#</span><span class="tag">SQL</span>
+          </div>
+        </div>
+        <div class="entry reveal">
+          <div class="entry__meta"><span class="entry__org">cloud</span></div>
+          <div class="entry__main tags">
+            <span class="tag">Azure</span><span class="tag">AWS</span><span class="tag">GCP</span>
+            <span class="tag">Bedrock</span><span class="tag">Lambda</span><span class="tag">BigQuery</span>
+            <span class="tag">PostgreSQL</span>
+          </div>
+        </div>
+        <div class="entry reveal">
+          <div class="entry__meta"><span class="entry__org">tools &amp; frameworks</span></div>
+          <div class="entry__main tags">
+            <span class="tag">React</span><span class="tag">Flask</span><span class="tag">Plotly Dash</span>
+            <span class="tag">Pytest</span><span class="tag">Git</span><span class="tag">Postman</span>
+            <span class="tag">Swagger</span><span class="tag">Jira</span><span class="tag">Confluence</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="foot reveal">
+      <span>paulina chametka</span>
+      <a href="index.html">← back to home</a>
+    </footer>
+  </div>
+
+  <script src="js/resume.js?v=4"></script>
+</body>
+
+</html>

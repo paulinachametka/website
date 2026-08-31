@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>paulina chametka</title>
+  <meta name="description" content="Paulina Chametka — software engineer." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=Quicksand:wght@400;500;600&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style-alt.css" />
+</head>
+
+<body>
+  <div class="grain" aria-hidden="true"></div>
+
+  <main class="stage">
+    <div class="scene">
+      <svg class="cottage" viewBox="0 0 320 320" role="img"
+        aria-label="A cozy little house at night with puffs of smoke from the chimney" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <filter id="sketch" x="-20%" y="-20%" width="140%" height="140%">
+            <feTurbulence type="fractalNoise" baseFrequency="0.018" numOctaves="3" seed="4" result="noise" />
+            <feDisplacementMap in="SourceGraphic" in2="noise" scale="3.5" xChannelSelector="R" yChannelSelector="G" />
+          </filter>
+        </defs>
+
+        <g filter="url(#sketch)" fill="none" stroke="#33302c" stroke-width="3"
+          stroke-linecap="round" stroke-linejoin="round">
+
+          <!-- moon -->
+          <circle cx="250" cy="72" r="17" fill="#f3e2a6" />
+          <circle cx="245" cy="68" r="2" fill="#33302c" stroke="none" />
+          <circle cx="255" cy="76" r="1.6" fill="#33302c" stroke="none" />
+
+          <!-- stars -->
+          <g class="twinkles" stroke-width="2.2">
+            <path class="star star1" d="M78,58 v10 M73,63 h10" />
+            <path class="star star2" d="M118,44 v8 M114,48 h8" />
+            <path class="star star3" d="M214,52 v9 M209.5,56.5 h9" />
+          </g>
+
+          <!-- ground -->
+          <path d="M70,264 q90,-12 180,0" stroke-width="2.5" />
+
+          <!-- bushes -->
+          <path fill="#a8c191" d="M64,264 q-4,-13 9,-15 q3,-11 13,-9 q11,-3 12,9 q11,1 7,15 z" />
+          <path fill="#a8c191" d="M228,264 q-3,-14 10,-15 q4,-10 13,-8 q11,-2 11,10 q9,3 5,13 z" />
+
+          <!-- chimney (behind roof) -->
+          <path fill="#f2e6d2" d="M190,104 h16 v30 h-16 z" />
+
+          <!-- puffy smoke -->
+          <g fill="#fdf6ea" stroke-width="2.4">
+            <circle class="puff puff1" cx="198" cy="98" r="6" />
+            <circle class="puff puff2" cx="204" cy="84" r="8" />
+            <circle class="puff puff3" cx="197" cy="68" r="10" />
+          </g>
+
+          <!-- roof -->
+          <path fill="#dc8a63" d="M86,172 L160,102 L234,172 Z" />
+          <!-- little roof trim line -->
+          <path d="M96,168 q64,-10 128,0" stroke-width="2.2" stroke="#b46b46" />
+
+          <!-- walls -->
+          <path fill="#f7e8d2" d="M104,168 h112 v78 q0,4 -4,4 h-104 q-4,0 -4,-4 z" />
+
+          <!-- door -->
+          <path fill="#9cba8c" d="M146,250 v-30 q0,-14 14,-14 q14,0 14,14 v30 z" />
+          <circle cx="168" cy="228" r="2.4" fill="#33302c" stroke="none" />
+
+          <!-- window with warm glow -->
+          <rect x="116" y="188" width="28" height="28" rx="3" fill="#f4d488" />
+          <path d="M130,188 v28 M116,202 h28" stroke-width="2.4" />
+
+          <!-- tiny round attic window -->
+          <circle cx="160" cy="148" r="9" fill="#f4d488" />
+        </g>
+      </svg>
+    </div>
+
+    <h1 class="name">paulina chametka</h1>
+    <svg class="squiggle" viewBox="0 0 160 12" aria-hidden="true">
+      <path d="M4,7 q16,-8 32,0 t32,0 t32,0 t32,0 t24,0" fill="none" stroke="#dc8a63" stroke-width="2.5"
+        stroke-linecap="round" />
+    </svg>
+    <p class="role">software engineer</p>
+
+    <nav class="links" aria-label="Links">
+      <a href="assets/Paulina Chametka - Resume.pdf" target="_blank" rel="noopener">resume</a>
+      <span class="dot" aria-hidden="true">·</span>
+      <a href="https://github.com/paulinachametka" target="_blank" rel="noopener">github</a>
+      <span class="dot" aria-hidden="true">·</span>
+      <a href="https://www.linkedin.com/in/paulina-chametka/" target="_blank" rel="noopener">linkedin</a>
+    </nav>
+  </main>
+
+  <script src="js/scripts.js"></script>
+</body>
+
+</html>

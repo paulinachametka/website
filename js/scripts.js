@@ -1,5 +1,20 @@
-// Gentle parallax: the little house drifts ever so slightly toward the cursor.
-// (Applied to the wrapper so the SVG's own "sway" animation keeps running.)
+// ---- Sun by day, moon by night ----------------------------------------
+// Background stays light either way; only the sky body changes.
+// ?time=day or ?time=night forces one (handy for testing).
+function pickTimeOfDay(hour) {
+  return hour >= 6 && hour < 18 ? "day" : "night";
+}
+
+const override = new URLSearchParams(location.search).get("time");
+const time =
+  override === "day" || override === "night"
+    ? override
+    : pickTimeOfDay(new Date().getHours());
+
+document.body.dataset.time = time;
+
+// ---- Gentle cursor parallax -------------------------------------------
+// Applied to the wrapper so the SVG's own "sway" keeps running.
 const scene = document.querySelector(".scene");
 
 if (scene && window.matchMedia("(hover: hover)").matches) {
